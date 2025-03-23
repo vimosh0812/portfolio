@@ -64,31 +64,13 @@ export default function Portfolio() {
   }
 
   useEffect(() => {
-    // Set up intersection observer for scroll animations
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("section-animate")
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0.1 },
-    )
-
-    // Find all sections to animate
+    // Simple animation without complex observers
     const sections = document.querySelectorAll("section")
     sections.forEach((section, index) => {
-      section.classList.add(`section-animate-delay-${(index % 3) + 1}`)
-      observer.observe(section)
+      setTimeout(() => {
+        section.classList.add("section-animate")
+      }, index * 100)
     })
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section)
-      })
-    }
   }, [])
 
   return (
@@ -310,7 +292,7 @@ export default function Portfolio() {
                     href="mailto:hello@yourportfolio.com"
                     className="text-gray-400 hover:text-orange-500 transition-colors"
                   >
-                    hello@yourportfolio.com
+                    vimosh2002@gmail.com
                   </a>
                 </div>
               </div>
@@ -321,7 +303,7 @@ export default function Portfolio() {
                 <div>
                   <h3 className="mb-2 text-xl font-semibold text-white">Phone</h3>
                   <a href="tel:+15551234567" className="text-gray-400 hover:text-orange-500 transition-colors">
-                    +1 (555) 123-4567
+                    +94 (76) 772-2120
                   </a>
                 </div>
               </div>
@@ -378,56 +360,60 @@ export default function Portfolio() {
 
             <form className="space-y-4">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-gray-400">
-                    Name
-                  </label>
-                  <input
-                    id="name"
-                    type="text"
-                    className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-gray-400">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
-                    placeholder="Your email"
-                  />
-                </div>
-              </div>
               <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium text-gray-400">
-                  Subject
+                <label htmlFor="name" className="text-sm font-medium text-gray-400">
+                Name
                 </label>
                 <input
-                  id="subject"
-                  type="text"
-                  className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
-                  placeholder="Subject"
+                id="name"
+                type="text"
+                className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
+                placeholder="Your name"
+                style={{ borderRadius: '8px' }}
                 />
               </div>
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-gray-400">
-                  Message
+                <label htmlFor="email" className="text-sm font-medium text-gray-400">
+                Email
                 </label>
-                <textarea
-                  id="message"
-                  rows={5}
-                  className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
-                  placeholder="Your message"
-                ></textarea>
+                <input
+                id="email"
+                type="email"
+                className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
+                placeholder="Your email"
+                style={{ borderRadius: '8px' }}
+                />
+              </div>
+              </div>
+              <div className="space-y-2">
+              <label htmlFor="subject" className="text-sm font-medium text-gray-400">
+                Subject
+              </label>
+              <input
+                id="subject"
+                type="text"
+                className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
+                placeholder="Subject"
+                style={{ borderRadius: '8px' }}
+              />
+              </div>
+              <div className="space-y-2">
+              <label htmlFor="message" className="text-sm font-medium text-gray-400">
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows={5}
+                className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 text-white placeholder:text-gray-500 focus:border-orange-500 focus:outline-none"
+                placeholder="Your message"
+                style={{ borderRadius: '8px' }}
+              ></textarea>
               </div>
               <button
-                type="submit"
-                className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-orange-500 px-8 text-sm font-medium text-black transition-all hover:bg-orange-600 sm:w-auto"
+              type="submit"
+              className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-orange-500 px-8 text-sm font-medium text-black transition-all hover:bg-orange-600 sm:w-auto"
               >
-                Send Message
+              Send Message
               </button>
             </form>
           </div>
