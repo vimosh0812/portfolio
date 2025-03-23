@@ -1,27 +1,10 @@
-"use client"
 
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import {
-  ArrowLeft,
-  ArrowRight,
-  ExternalLink,
-  Calendar,
-  Clock,
-  Users,
-  Target,
-  Award,
-  Zap,
-  Lightbulb,
-  CheckCircle,
-  Download,
-  Share2,
-  Bookmark,
-  X,
-} from "lucide-react"
+import { notFound } from 'next/navigation'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowLeft, Bookmark, ExternalLink, Share2, Calendar, Users, Download, CheckCircle, Award, Clock, Lightbulb, Target, Zap, ArrowRight } from 'lucide-react'
+import { SetStateAction } from 'react'
 
-// This is a mock database of projects
 const projects = [
   {
     slug: "finance-dashboard-app",
@@ -332,70 +315,65 @@ const projects = [
   },
 ]
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const [expandedImage, setExpandedImage] = useState<string | null>(null)
+export async function generateStaticParams() {
+  const paths = projects.map((project) => ({
+    slug: project.slug,
+  }))
+
+  return paths.map((param) => ({
+    slug: param.slug,
+  }))
+}
+
+const ProjectPage = async ({ params }: { params: { slug: string } }) => {
   const project = projects.find((p) => p.slug === params.slug)
 
   if (!project) {
-    return <div className="min-h-screen flex items-center justify-center">Project not found</div>
+    notFound()
   }
 
   return (
     <main className="min-h-screen bg-black text-white pt-16">
-      {/* Expanded Image Modal */}
-      {expandedImage && (
-        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4">
-          <button
-            onClick={() => setExpandedImage(null)}
-            className="absolute top-4 right-4 bg-zinc-800 rounded-full p-2 text-white hover:bg-zinc-700 transition-colors"
+      {/* Back Section */}   
+       <Link
+          href="/#projects"
+          className="inline-flex items-center gap-2 mb-8 text-sm text-gray-400 hover:text-orange-500 transition-colors cursor-pointer px-16"
           >
-            <X className="h-6 w-6" />
-          </button>
-          <div className="relative w-full max-w-5xl h-[80vh]">
-            <Image src={expandedImage || "/placeholder.svg"} alt="Expanded view" fill className="object-contain" />
-          </div>
-        </div>
-      )}
-
-      {/* Hero Section */}
-      <section className="relative pt-24">
+          <ArrowLeft className="h-4 w-4" />
+          Back to Projects
+      </Link> 
+        {/* Hero Section */}
+        <section className="relative pt-24">
         <div className="absolute inset-0 bg-gradient-to-b from-orange-500/10 to-transparent opacity-30 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 py-12 md:py-24">
-          <Link
-            href="/#projects"
-            className="inline-flex items-center gap-2 mb-8 text-sm text-gray-400 hover:text-orange-500 transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Projects
-          </Link>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 items-start">
             <div className="space-y-6">
               <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag, index) => (
-                  <span key={index} className="rounded-full bg-orange-500/10 px-3 py-1 text-xs text-orange-500">
-                    {tag}
-                  </span>
-                ))}
+          {project.tags.map((tag: string | number, index: number) => (
+            <span key={index} className="rounded-full bg-orange-500/10 px-3 py-1 text-xs text-orange-500">
+              {tag}
+            </span>
+          ))}
               </div>
               <h1 className="text-4xl md:text-5xl font-bold">{project.title}</h1>
               <p className="text-xl text-gray-400">{project.fullDescription}</p>
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  View Live Project
-                </a>
-                <button className="inline-flex items-center gap-2 text-gray-400 hover:text-orange-500 transition-colors">
-                  <Share2 className="h-4 w-4" />
-                  Share
-                </button>
-                <button className="inline-flex items-center gap-2 text-gray-400 hover:text-orange-500 transition-colors">
-                  <Bookmark className="h-4 w-4" />
-                  Save
-                </button>
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-400 transition-colors"
+          >
+            <ExternalLink className="h-4 w-4" />
+            View Live Project
+          </a>
+          <button className="inline-flex items-center gap-2 text-gray-400 hover:text-orange-500 transition-colors">
+            <Share2 className="h-4 w-4" />
+            Share
+          </button>
+          <button className="inline-flex items-center gap-2 text-gray-400 hover:text-orange-500 transition-colors">
+            <Bookmark className="h-4 w-4" />
+            Save
+          </button>
               </div>
             </div>
             <div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden">
@@ -403,83 +381,21 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Project Details Section */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Client</h3>
-                <p className="text-gray-400">{project.projectDetails.client}</p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Duration</h3>
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4 text-orange-500" />
-                  <p className="text-gray-400">{project.projectDetails.duration}</p>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Role</h3>
-                <p className="text-gray-400">{project.projectDetails.role}</p>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Team</h3>
-                <div className="flex items-center gap-2">
-                  <Users className="h-4 w-4 text-orange-500" />
-                  <p className="text-gray-400">{project.projectDetails.team}</p>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Tools</h3>
-                <div className="flex flex-wrap gap-2">
-                  {project.projectDetails.tools.map((tool, index) => (
-                    <span key={index} className="rounded-full bg-zinc-900 px-3 py-1 text-xs text-gray-300">
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <div className="md:col-span-2 space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Deliverables</h3>
-                <ul className="list-disc list-inside text-gray-400 space-y-1">
-                  {project.projectDetails.deliverables.map((deliverable, index) => (
-                    <li key={index}>{deliverable}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Key Challenges</h3>
-                <ul className="list-disc list-inside text-gray-400 space-y-1">
-                  {project.challenges.map((challenge, index) => (
-                    <li key={index}>{challenge}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
       {/* Gallery Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12">Project Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {project.gallery.map((image, index) => (
+            {project.gallery.map((image: SetStateAction<string | null>, index: number) => (
               <div
                 key={index}
                 className="relative h-[250px] md:h-[300px] rounded-xl overflow-hidden group cursor-pointer"
-                onClick={() => setExpandedImage(image)}
+                // onClick={() => setExpandedImage(image)}
               >
                 <Image
-                  src={image || "/placeholder.svg"}
+                  src={typeof image === 'string' ? image : "/placeholder.svg"}
                   alt={`${project.title} gallery image ${index + 1}`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -507,8 +423,68 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
-
-      {/* Testimonial Section */}
+      {/* Project Details Section */}
+       <section className="py-12">
+       <div className="container mx-auto px-4">
+         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+             <div className="space-y-6">
+             <div>
+                 <h3 className="text-lg font-semibold mb-2">Client</h3>
+                 <p className="text-gray-400">{project.projectDetails.client}</p>
+               </div>
+               <div>
+                 <h3 className="text-lg font-semibold mb-2">Duration</h3>
+                 <div className="flex items-center gap-2">
+                   <Calendar className="h-4 w-4 text-orange-500" />
+                   <p className="text-gray-400">{project.projectDetails.duration}</p>
+                </div>
+               </div>
+               <div>
+                 <h3 className="text-lg font-semibold mb-2">Role</h3>
+                 <p className="text-gray-400">{project.projectDetails.role}</p>
+               </div>
+             </div>
+             <div className="space-y-6">
+               <div>
+                 <h3 className="text-lg font-semibold mb-2">Team</h3>
+                 <div className="flex items-center gap-2">
+                   <Users className="h-4 w-4 text-orange-500" />
+                   <p className="text-gray-400">{project.projectDetails.team}</p>
+                 </div>
+               </div>
+               <div>
+                 <h3 className="text-lg font-semibold mb-2">Tools</h3>
+                 <div className="flex flex-wrap gap-2">
+                   {project.projectDetails.tools.map((tool: string | number, index: number) => (
+                    <span key={index} className="rounded-full bg-zinc-900 px-3 py-1 text-xs text-gray-300">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="md:col-span-2 space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Deliverables</h3>
+                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                  {project.projectDetails.deliverables.map((deliverable: string | number, index: number) => (
+                    <li key={index}>{deliverable}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2">Key Challenges</h3>
+                <ul className="list-disc list-inside text-gray-400 space-y-1">
+                  {project.challenges.map((challenge: string,index: number) => (
+                    <li key={index}>{challenge}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Testimonial Section
       <section className="py-16 bg-zinc-950">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -527,8 +503,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         </div>
-      </section>
-
+      </section> */}
       {/* Process Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -536,7 +511,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <div>
               <h2 className="text-3xl font-bold mb-8">Design Process</h2>
               <ol className="relative border-l border-orange-500/30">
-                {project.process.map((step, index) => (
+                {project.process.map((step: string, index: number) => (
                   <li key={index} className="mb-10 ml-6">
                     <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-500/10 rounded-full -left-4 ring-4 ring-black text-orange-500">
                       {index + 1}
@@ -553,7 +528,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <div>
               <h2 className="text-3xl font-bold mb-8">Outcomes</h2>
               <div className="space-y-6">
-                {project.outcomes.map((outcome, index) => (
+                {project.outcomes.map((outcome: string, index: number) => (
                   <div key={index} className="p-6 bg-zinc-900 rounded-xl">
                     <div className="flex items-center gap-4">
                       <div className="flex-shrink-0 w-12 h-12 rounded-full bg-orange-500/10 flex items-center justify-center text-orange-500">
@@ -635,7 +610,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
-
       {/* Next Project Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
@@ -670,7 +644,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </section>
-    </main>
+  </main>
   )
 }
 
+export default ProjectPage

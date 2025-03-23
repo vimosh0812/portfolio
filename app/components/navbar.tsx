@@ -3,19 +3,26 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Frame, Menu, X } from "lucide-react"
+import { usePathname } from "next/navigation"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+  const pathname = usePathname()
 
   useEffect(() => {
+    // Check if we're on a project detail page
+    const isProjectPage = pathname.startsWith("/projects/") && pathname !== "/projects"
+    setIsVisible(!isProjectPage)
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [pathname])
 
   const scrollToSection = (sectionId: string) => {
     setIsMobileMenuOpen(false)
@@ -24,6 +31,8 @@ export default function Navbar() {
       element.scrollIntoView({ behavior: "smooth" })
     }
   }
+
+  if (!isVisible) return null
 
   return (
     <header
