@@ -105,14 +105,14 @@ export default function Portfolio() {
           >
             <button
               onClick={() => scrollToSection("projects")}
-              className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-orange-500 px-8 text-sm font-medium text-black transition-all hover:bg-orange-600"
+              className="group inline-flex h-12 w-48 items-center justify-center gap-2 rounded-full bg-orange-500 px-8 text-sm font-medium text-black transition-all hover:bg-orange-600"
             >
               View My Work
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-orange-500/20 bg-black/50 px-8 text-sm font-medium text-white backdrop-blur-sm transition-all hover:border-orange-500/50"
+              className="inline-flex h-12 w-48 items-center justify-center gap-2 rounded-full border border-orange-500/20 bg-black/50 px-8 text-sm font-medium text-white backdrop-blur-sm transition-all hover:border-orange-500/50"
             >
               Contact Me
             </button>
@@ -409,12 +409,13 @@ export default function Portfolio() {
                 style={{ borderRadius: '8px' }}
               ></textarea>
               </div>
-              <button
-              type="submit"
-              className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-orange-500 px-8 text-sm font-medium text-black transition-all hover:bg-orange-600 sm:w-auto"
-              >
-              Send Message
-              </button>
+                <button
+                type="submit"
+                className="inline-flex h-12 w-full items-center justify-center rounded-lg bg-orange-500 px-8 text-sm font-medium text-black transition-all hover:bg-orange-600 sm:w-auto"
+                style={{ borderRadius: '8px' }}
+                >
+                Send Message
+                </button>
             </form>
           </div>
         </div>
