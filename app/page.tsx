@@ -434,7 +434,7 @@ export default function Portfolio() {
       <footer className="border-t border-zinc-800 px-4 py-8">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-gray-400">© 2025 Your Name. All rights reserved.</p>
+            <p className="text-sm text-gray-400">© 2025 Vimosh V. All rights reserved.</p>
             <div className="flex space-x-4">
               <a
                 href="https://linkedin.com"
