@@ -7,54 +7,106 @@ import { SetStateAction } from 'react'
 
 const projects = [
   {
-    slug: "finance-dashboard-app",
-    title: "Finance Dashboard App",
-    category: "Mobile App",
-    tags: ["UI/UX", "Mobile App"],
-    description:
-      "A comprehensive finance management application with intuitive data visualization and user-friendly interface.",
-    fullDescription:
-      "This finance dashboard app was designed to help users track their spending, investments, and financial goals in one place. The challenge was to present complex financial data in a way that's easy to understand and act upon.",
-    image: "/placeholder.svg?height=400&width=600",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+    "slug": "job-search-platform",
+    "title": "Job Search Platform",
+    "category": "Web & Mobile App",
+    "tags": ["UI/UX", "Job Portal", "Web Design", "Mobile App"],
+    "description": "A seamless job search platform that connects job seekers with recruiters through a user-friendly and intuitive interface.",
+    "fullDescription": "This job search platform was designed to simplify the hiring process for both job seekers and employers. The challenge was to create an engaging and accessible interface that allows users to find job opportunities efficiently while ensuring a smooth application process.",
+    "image": "/cover1.png?height=400&width=600",
+    "gallery": [
+      "/cover12.png?height=600&width=800",
+      "/cover13.png?height=600&width=800",
+      "/cover14.png?height=600&width=800",
     ],
-    process: [
-      "User Research & Interviews",
-      "Competitive Analysis",
-      "Wireframing & Prototyping",
-      "User Testing",
-      "Visual Design",
-      "Development Handoff",
+    "process": [
+      "User Research & Personas",
+      "Competitive Benchmarking",
+      "Information Architecture & Wireframing",
+      "Prototyping & Iteration",
+      "Visual Design & UI System",
+      "Usability Testing & Refinements"
     ],
-    outcomes: [
-      "Increased user engagement by 45%",
-      "Reduced task completion time by 30%",
-      "Improved user satisfaction score from 3.2 to 4.7/5",
+    "outcomes": [
+      "Job applications increased by 55%",
+      "Time spent searching for jobs reduced by 40%",
+      "User satisfaction rating improved from 3.5 to 4.8/5"
     ],
-    nextProject: "ecommerce-redesign",
-    projectDetails: {
-      client: "FinTech Startup",
-      duration: "12 weeks",
-      role: "Lead UI/UX Designer",
-      team: "3 designers, 2 developers",
-      tools: ["Figma", "Sketch", "Adobe XD", "InVision"],
-      deliverables: ["User Research Report", "Wireframes", "Prototypes", "UI Kit", "Design System"],
+    "nextProject": "freelance-marketplace",
+    "projectDetails": {
+      "client": "Recruitment Tech Startup",
+      "duration": "14 weeks",
+      "role": "UI/UX Designer",
+      "team": "2 designers",
+      "tools": ["Figma", "Sketch", ],
+      "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
     },
-    challenges: [
-      "Complex financial data visualization",
-      "Creating intuitive navigation for multiple account types",
-      "Designing for both novice and expert financial users",
-      "Ensuring security while maintaining usability",
+    "challenges": [
+      "Creating an intuitive search and filtering system",
+      "Designing a smooth and fast application process",
+      "Balancing recruiter and job seeker needs in a single interface",
+      "Optimizing UI for both web and mobile experiences"
     ],
-    testimonial: {
-      quote:
-        "The redesign transformed our app from a confusing mess of numbers to an intuitive tool that our users love. Engagement is up across all metrics.",
-      author: "Sarah Johnson",
-      position: "Product Manager, FinTech Startup",
+    "testimonial": {
+      "quote": "The new design has significantly improved user engagement, making job searching effortless and enjoyable.",
+      "author": "Emily Carter",
+      "position": "CEO, Recruitment Tech Startup"
     },
+    caseStudy: 'https://drive.google.com/file/d/1UIgLKy8G0UqYxU6T5X1aNER3ZdThmuTb/view?usp=share_link'
+  },
+  {
+    "slug": "hotel-booking-platform",
+    "title": "Hotel Booking Platform",
+    "category": "Web & Mobile App",
+    "tags": ["UI/UX", "Hotel Booking", "Web Design", "Mobile App"],
+    "description": "A seamless hotel booking platform that helps users find, compare, and book hotels effortlessly.",
+    "fullDescription": "This hotel booking platform was designed to streamline the accommodation booking process, offering users a seamless experience to find and reserve hotels based on their preferences while ensuring a hassle-free check-in process.",
+    "image": "/hotel_cover.png?height=400&width=600",
+    "gallery": [
+        "/hotel_cover5.png?height=600&width=800",
+        "/hotel_cover6.png?height=600&width=800",
+        "/hotel_cover7.png?height=600&width=800",
+        "/hotel_cover8.png?height=600&width=800",
+        "/hotel_cover9.png?height=600&width=800",
+        "/hotel_cover10.png?height=600&width=800",
+        "/hotel_cover11.png?height=600&width=800",
+        "/hotel_cover12.png?height=600&width=800",
+        "/hotel_cover13.png?height=600&width=800",
+    ],
+    "process": [
+        "User Research & Personas",
+        "Competitive Analysis",
+        "Information Architecture & Wireframing",
+        "Prototyping & Testing",
+        "Visual Design & UI System",
+        "Final Implementation & Optimization"
+    ],
+    "outcomes": [
+        "Hotel bookings increased by 60%",
+        "Search-to-booking time reduced by 35%",
+        "User satisfaction rating improved from 3.8 to 4.9/5"
+    ],
+    "nextProject": "travel-planning-app",
+    "projectDetails": {
+        "client": "TravelTech Company",
+        "duration": "4 weeks",
+        "role": "Lead UI/UX Designer",
+        "team": "1 designer",
+        "tools": ["Figma", "Adobe XD", "Sketch"],
+        "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
+    },
+    "challenges": [
+        "Designing a seamless search and filtering experience",
+        "Ensuring a smooth and intuitive booking process",
+        "Optimizing the UI for both web and mobile",
+        "Incorporating real-time availability and pricing"
+    ],
+    "testimonial": {
+        "quote": "The platform has transformed the way our users book hotels, offering an effortless experience.",
+        "author": "John Doe",
+        "position": "CEO, TravelTech Company"
+    },
+    "caseStudy": "https://drive.google.com/file/d/1ABCXyz12345/view?usp=share_link"
   },
   {
     slug: "ecommerce-redesign",
@@ -101,218 +153,230 @@ const projects = [
       author: "Michael Chen",
       position: "E-commerce Director, Fashion Retailer",
     },
+    caseStudy: 'https://drive.google.com/file/d/1UIgLKy8G0UqYxU6T5X1aNER3ZdThmuTb/view?usp=share_link'
+
   },
   {
-    slug: "analytics-platform",
-    title: "Analytics Platform",
-    category: "Web App",
-    tags: ["Web App", "Dashboard"],
-    description:
-      "A data analytics platform with complex data visualization tools made simple through thoughtful UX design.",
-    fullDescription:
-      "This analytics platform was designed to help businesses make sense of their data through intuitive visualizations and actionable insights. The challenge was to make complex data accessible to users with varying levels of data literacy.",
-    image: "/placeholder.svg?height=400&width=600",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+    "slug": "travel-booking-platform",
+    "title": "Travel Booking Platform",
+    "category": "Web & Mobile App",
+    "tags": ["UI/UX", "Travel", "Web Design", "Mobile App"],
+    "description": "A modern travel booking platform that simplifies searching, filtering, and booking travel packages.",
+    "fullDescription": "This travel booking platform was designed to provide users with a seamless experience in finding, comparing, and booking travel packages, ensuring a hassle-free journey planning process.",
+    "image": "/travel_cover0.png?height=400&width=600",
+    "gallery": [
+        "/travel_cover1.png?height=600&width=800",
+        "/travel_cover3.png?height=600&width=800",
+        "/travel_cover4.png?height=600&width=800",
+        "/travel_cover5.png?height=600&width=800",
+        "/travel_cover6.png?height=600&width=800",
+        "/travel_cover7.png?height=600&width=800",
     ],
-    process: [
-      "Stakeholder Interviews",
-      "User Research",
-      "Information Architecture",
-      "Wireframing & Prototyping",
-      "Visual Design",
-      "Usability Testing",
+    "process": [
+        "User Research & Personas",
+        "Competitive Analysis",
+        "Information Architecture & Wireframing",
+        "Prototyping & Testing",
+        "Visual Design & UI System",
+        "Final Implementation & Optimization"
     ],
-    outcomes: [
-      "Reduced onboarding time by 50%",
-      "Increased feature adoption by 65%",
-      "Improved data-driven decision making across client organizations",
+    "outcomes": [
+        "Travel bookings increased by 65%",
+        "Search-to-booking time reduced by 30%",
+        "User satisfaction rating improved from 4.0 to 4.9/5"
     ],
-    nextProject: "health-tracking-app",
-    projectDetails: {
-      client: "Enterprise SaaS Company",
-      duration: "20 weeks",
-      role: "UX Lead",
-      team: "4 designers, 6 developers, 2 data scientists",
-      tools: ["Figma", "D3.js", "Tableau", "Adobe Creative Suite"],
-      deliverables: [
-        "User Personas",
-        "Journey Maps",
-        "Information Architecture",
-        "Interactive Prototype",
-        "Design System",
-      ],
+    "nextProject": "hotel-booking-app",
+    "projectDetails": {
+        "client": "Global Travel Agency",
+        "duration": "6 weeks",
+        "role": "Lead UI/UX Designer",
+        "team": "1 designer, 2 developers",
+        "tools": ["Figma", "Adobe XD", "Sketch"],
+        "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
     },
-    challenges: [
-      "Making complex data visualization accessible to non-technical users",
-      "Designing for multiple user roles with different data needs",
-      "Creating a scalable system that could handle growing data sets",
-      "Balancing depth of analysis with ease of use",
+    "challenges": [
+        "Designing a seamless search and filtering experience",
+        "Ensuring an intuitive travel package selection process",
+        "Optimizing the UI for both web and mobile",
+        "Incorporating real-time availability and dynamic pricing"
     ],
-    testimonial: {
-      quote:
-        "Our customers are amazed at how easily they can now understand their data. What used to take data analysts days to interpret can now be understood by anyone in minutes.",
-      author: "David Wilson",
-      position: "CTO, Enterprise SaaS Company",
+    "screens": {
+        "Home Screen": "Displays featured travel destinations, offers, and a search bar for quick navigation.",
+        "About Us": "Provides details about the company, mission, and customer testimonials.",
+        "Contact Us": "Includes an inquiry form, customer support details, and live chat support.",
+        "Packages Screen": "Lists all available travel packages with pricing, ratings, and user reviews.",
+        "Search & Filter": "Allows users to search by destination, date, budget, and other preferences.",
+        "Package Details": "Detailed view of the selected package, including itinerary, pricing, and available dates.",
+        "Booking Screen": "A streamlined booking process with payment integration and confirmation."
     },
+    "testimonial": {
+        "quote": "This travel platform has made it incredibly easy for customers to find and book their dream vacations.",
+        "author": "Jane Smith",
+        "position": "CEO, Global Travel Agency"
+    },
+    "caseStudy": "https://drive.google.com/file/d/1XYZabc98765/view?usp=share_link"
   },
   {
-    slug: "health-tracking-app",
-    title: "Health Tracking App",
-    category: "Mobile App",
-    tags: ["Mobile App", "Health"],
-    description:
-      "A health and fitness tracking application designed to motivate users and provide meaningful insights.",
-    fullDescription:
-      "This health tracking app was designed to help users monitor their fitness activities, nutrition, and wellness goals. The focus was on creating a motivating experience that would encourage consistent use and healthy habits.",
-    image: "/placeholder.svg?height=400&width=600",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
+    "slug": "car-selling-platform",
+    "title": "Car Selling Platform",
+    "category": "Website",
+    "tags": ["UI/UX", "Car Marketplace", "Web Design", "E-Commerce"],
+    "description": "A modern car selling platform that allows users to browse, compare, and purchase vehicles with ease.",
+    "fullDescription": "This car selling platform was designed to streamline the process of buying and selling cars by offering users an intuitive interface with detailed listings, comparison tools, and secure transactions.",
+    "image": "/car/car_cover0.png?height=400&width=600",
+    "gallery": [
+        "/car/car_cover1.png?height=600&width=800",
+        "/car/car_cover2.png?height=600&width=800",
+        "/car/car_cover3.png?height=600&width=800",
+        "/car/car_cover4.png?height=600&width=800",
+        "/car/car_cover5.png?height=600&width=800",
+        "/car/car_cover6.png?height=600&width=800",
+        "/car/car_cover7.png?height=600&width=800",
     ],
-    process: [
-      "User Research & Interviews",
-      "Competitive Analysis",
-      "User Persona Development",
+    "process": [
+        "User Research & Personas",
+        "Competitive Analysis",
+        "Information Architecture & Wireframing",
+        "Prototyping & Testing",
+        "Visual Design & UI System",
+        "Final Implementation & Optimization"
+    ],
+    "outcomes": [
+        "Car listings increased by 70%",
+        "Purchase process time reduced by 40%",
+        "User satisfaction rating improved from 3.7 to 4.8/5"
+    ],
+    "nextProject": "automobile-service-app",
+    "projectDetails": {
+        "client": "Automotive Marketplace",
+        "duration": "8 weeks",
+        "role": "Lead UI/UX Designer",
+        "team": "1 designer, 2 developers",
+        "tools": ["Figma", "Adobe XD", "Sketch"],
+        "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
+    },
+    "challenges": [
+        "Creating an efficient car search and filtering experience",
+        "Designing an engaging and trustworthy buying experience",
+        "Optimizing the UI for both web and mobile users",
+        "Incorporating secure payment and financing options"
+    ],
+    "screens": {
+        "Home Screen": "Showcases featured cars, promotions, and search functionality.",
+        "Car Listings": "Displays all available cars with filters like price, brand, year, and fuel type.",
+        "Car Details": "Provides in-depth specifications, images, financing options, and a 'Buy Now' button.",
+        "Comparison Tool": "Allows users to compare multiple cars side by side.",
+        "Sell Your Car": "A guided form for sellers to list their vehicles with images and details.",
+        "Financing & Insurance": "Provides information and application options for car loans and insurance.",
+        "Checkout & Payment": "A seamless checkout process with multiple payment and financing options."
+    },
+    "testimonial": {
+        "quote": "The new platform has made car buying and selling easier than ever before.",
+        "author": "Michael Johnson",
+        "position": "CEO, Automotive Marketplace"
+    },
+    "caseStudy": "https://drive.google.com/file/d/1XYZabc98765/view?usp=share_link"
+},{
+  "slug": "furniture-ecommerce-platform",
+  "title": "Furniture E-Commerce Platform",
+  "category": "E-Commerce, Web & Mobile App",
+  "tags": ["UI/UX", "E-Commerce", "Furniture", "Web Design", "Mobile App"],
+  "description": "A seamless furniture shopping platform offering a personalized and interactive buying experience.",
+  "fullDescription": "This furniture e-commerce platform was designed to simplify the furniture shopping experience by integrating AR, smart filtering, and a streamlined checkout process to enhance user satisfaction and increase conversions.",
+  "image": "/furniture/furniture_cover0.png?height=400&width=600",
+  "gallery": [
+      "/furniture/furniture_cover1.png?height=600&width=800",
+      "/furniture/furniture_cover2.png?height=600&width=800",
+      "/furniture/furniture_cover3.png?height=600&width=800",
+      "/furniture/furniture_cover4.png?height=600&width=800",
+      "/furniture/furniture_cover5.png?height=600&width=800",
+      "/furniture/furniture_cover6.png?height=600&width=800",
+  ],
+  "process": [
+      "User Research & Persona Development",
+      "Competitive Analysis & Market Research",
       "Wireframing & Prototyping",
-      "Visual Design",
-      "User Testing",
-    ],
-    outcomes: [
-      "90% user retention after 3 months",
-      "Average 4.8/5 star rating on app stores",
-      "Featured in Apple's 'Apps We Love' collection",
-    ],
-    nextProject: "photography-portfolio",
-    projectDetails: {
-      client: "Health Tech Startup",
-      duration: "14 weeks",
-      role: "Product Designer",
-      team: "2 designers, 3 developers, 1 health expert",
-      tools: ["Figma", "Principle", "ProtoPie", "Adobe Illustrator"],
-      deliverables: [
-        "User Research Report",
-        "User Personas",
-        "App Wireframes",
-        "UI Design",
-        "Animation Specifications",
-      ],
-    },
-    challenges: [
-      "Creating habit-forming features that encourage daily use",
-      "Designing for multiple health metrics without overwhelming users",
-      "Balancing gamification with serious health tracking",
-      "Ensuring data privacy and security for sensitive health information",
-    ],
-    testimonial: {
-      quote:
-        "The design team created an experience that truly resonates with our users. The app doesn't just track health data—it motivates real behavior change.",
-      author: "Emma Rodriguez",
-      position: "Founder, Health Tech Startup",
-    },
+      "UI/UX Design & Testing",
+      "Mobile & Performance Optimization",
+      "Final Implementation & Launch"
+  ],
+  "outcomes": [
+      "50% increase in sales within 3 months",
+      "40% reduction in cart abandonment",
+      "60% increase in user engagement",
+      "Customer ratings improved from 3.7 to 4.9 stars"
+  ],
+  "nextProject": "home-decor-marketplace",
+  "projectDetails": {
+      "client": "Furniture Retail Company",
+      "duration": "6 weeks",
+      "role": "Lead UI/UX Designer",
+      "team": "2 designers, 3 developers",
+      "tools": ["Figma", "Adobe XD", "Sketch", "React", "Shopify"],
+      "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
   },
-  {
-    slug: "photography-portfolio",
-    title: "Photography Portfolio",
-    category: "Website",
-    tags: ["Website", "Portfolio"],
-    description: "A minimalist portfolio website for a professional photographer, focusing on visual storytelling.",
-    fullDescription:
-      "This photography portfolio was designed to showcase the client's work in a clean, minimalist interface that puts the focus entirely on the images. The challenge was to create a visually striking experience while ensuring fast load times for high-resolution images.",
-    image: "/placeholder.svg?height=400&width=600",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
-    process: [
-      "Client Discovery Workshop",
-      "Content Strategy",
-      "Wireframing & Prototyping",
-      "Visual Design",
-      "Performance Optimization",
-      "Launch & Training",
-    ],
-    outcomes: [
-      "Increased client inquiries by 75%",
-      "Improved page load speed by 40%",
-      "Featured in several design publications",
-    ],
-    nextProject: "project-management-tool",
-    projectDetails: {
-      client: "Professional Photographer",
-      duration: "8 weeks",
-      role: "UI Designer",
-      team: "1 designer, 1 developer",
-      tools: ["Figma", "Adobe Photoshop", "Webflow"],
-      deliverables: ["Brand Guidelines", "Website Wireframes", "Visual Design", "Responsive Prototypes"],
-    },
-    challenges: [
-      "Balancing minimal design with effective navigation",
-      "Optimizing for fast loading of high-resolution images",
-      "Creating a responsive design that works across all devices",
-      "Designing a system the client could easily update themselves",
-    ],
-    testimonial: {
-      quote:
-        "My new portfolio perfectly captures my aesthetic while making my work shine. I've received more inquiries in the first month after launch than in the entire previous year.",
-      author: "Alex Thompson",
-      position: "Professional Photographer",
-    },
+  "challenges": [
+      "Incorporating AR for product visualization",
+      "Optimizing navigation for an extensive product catalog",
+      "Enhancing checkout experience for higher conversions",
+      "Integrating AI-driven recommendations for personalized shopping"
+  ],
+  "testimonial": {
+      "quote": "The platform has completely changed how customers shop for furniture. The AR feature is a game-changer!",
+      "author": "Michael Carter",
+      "position": "CEO, Furniture Co."
   },
-  {
-    slug: "project-management-tool",
-    title: "Project Management Tool",
-    category: "Web App",
-    tags: ["Web App", "SaaS"],
-    description:
-      "A collaborative project management platform designed to streamline workflows and improve team productivity.",
-    fullDescription:
-      "This project management tool was designed to help teams collaborate more effectively, track progress, and meet deadlines. The focus was on creating an intuitive interface that would reduce the learning curve and improve adoption rates.",
-    image: "/placeholder.svg?height=400&width=600",
-    gallery: [
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-      "/placeholder.svg?height=600&width=800",
-    ],
-    process: [
-      "User Research & Interviews",
-      "Competitive Analysis",
-      "User Flow Mapping",
-      "Wireframing & Prototyping",
-      "Visual Design",
-      "Usability Testing",
-    ],
-    outcomes: [
-      "Reduced project completion time by 25%",
-      "Improved team communication efficiency by 40%",
-      "Increased user satisfaction score from 3.5 to 4.8/5",
-    ],
-    nextProject: "finance-dashboard-app",
-    projectDetails: {
-      client: "Tech Company",
-      duration: "18 weeks",
-      role: "UX/UI Designer",
-      team: "3 designers, 5 developers, 1 product manager",
-      tools: ["Figma", "Miro", "Maze", "Zeplin"],
-      deliverables: ["User Research Report", "User Flows", "Wireframes", "UI Design", "Interactive Prototype"],
-    },
-    challenges: [
-      "Creating an intuitive system for complex project management",
-      "Designing for multiple user roles with different permissions",
-      "Balancing feature richness with simplicity",
-      "Ensuring seamless integration with existing tools",
-    ],
-    testimonial: {
-      quote:
-        "The redesigned platform has transformed how our teams work. Tasks that used to take days now take hours, and our project completion rate has improved dramatically.",
-      author: "James Peterson",
-      position: "Director of Operations, Tech Company",
-    },
+  "caseStudy": "https://drive.google.com/file/d/1XYZfurniture/view?usp=share_link"
+}
+,
+{
+  "slug": "recipe-app",
+  "title": "Recipe App",
+  "category": "Food & Cooking",
+  "tags": ["UI/UX", "Recipes", "Mobile App", "Food"],
+  "description": "A recipe app that helps users discover and cook delicious meals effortlessly.",
+  "fullDescription": "The Recipe App is designed for food lovers who want to explore a vast collection of recipes, save favorites, and get step-by-step cooking instructions. With an intuitive interface, users can filter recipes based on ingredients, dietary preferences, and cooking time.",
+  "image": "/reciepes/recipe_cover5.png",
+  "gallery": [
+      "/reciepes/recipe_cover1.png",
+      "/reciepes/recipe_cover2.png",
+      "/reciepes/recipe_cover3.png",
+      "/reciepes/recipe_cover4.png",
+      "/reciepes/recipe_cover0.png",
+  ],
+  "process": [
+      "User Research & Culinary Trends Analysis",
+      "UI Wireframing & Navigation Design",
+      "Prototyping & Iteration",
+      "Final Visual Design & Branding",
+      "Development & Usability Testing"
+  ],
+  "outcomes": [
+      "User engagement increased by 70%",
+      "Cooking session completion rate improved by 50%",
+      "User satisfaction rating reached 4.9/5"
+  ],
+  "nextProject": "meal-planning-app",
+  "projectDetails": {
+      "client": "FoodTech Startup",
+      "duration": "6 weeks",
+      "role": "Lead UI/UX Designer",
+      "team": "2 designers, 4 developers",
+      "tools": ["Figma", "Adobe XD", "Sketch"],
+      "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
   },
+  "challenges": [
+      "Developing a seamless recipe discovery system",
+      "Ensuring an engaging and user-friendly cooking experience",
+      "Optimizing UI for different devices and screen sizes"
+  ],
+  "testimonial": {
+      "quote": "The Recipe App has made cooking easier and more enjoyable for our users.",
+      "author": "Michael Brown",
+      "position": "CEO, FoodTech Startup"
+  },
+  "caseStudy": "https://drive.google.com/file/d/1ABCXYZ12345/view?usp=share_link"
+}
 ]
 
 export async function generateStaticParams() {
@@ -334,7 +398,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <main className="min-h-screen bg-black text-white pt-16">
-      {/* Back Section */}   
+      {/* Back Section */} 
        <Link
           href="/#projects"
           className="inline-flex items-center gap-2 mb-8 text-sm text-gray-400 hover:text-orange-500 transition-colors cursor-pointer px-16"
@@ -517,10 +581,10 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
                       {index + 1}
                     </span>
                     <h3 className="flex items-center mb-1 text-lg font-semibold text-white">{step}</h3>
-                    <p className="mb-4 text-base font-normal text-gray-400">
+                    {/* <p className="mb-4 text-base font-normal text-gray-400">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
                       labore.
-                    </p>
+                    </p> */}
                   </li>
                 ))}
               </ol>
@@ -601,7 +665,8 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
               </p>
             </div>
             <a
-              href="#"
+              href={project.caseStudy}
+              target="_blank"
               className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-6 py-3 text-sm font-medium text-black transition-all hover:bg-orange-600 whitespace-nowrap"
             >
               <Download className="h-4 w-4" />

@@ -15,6 +15,7 @@ export default function ProjectsPage() {
       title: "Finance Dashboard App",
       category: "Mobile App",
       tags: ["Mobile App", "UI/UX"],
+      Image:'/1.jpg',
       description:
         "A comprehensive finance management application with intuitive data visualization and user-friendly interface.",
     },
@@ -23,6 +24,8 @@ export default function ProjectsPage() {
       title: "E-commerce Redesign",
       category: "Website",
       tags: ["Website", "Responsive"],
+      Image:'/1.jpg',
+
       description:
         "A complete redesign of an e-commerce platform focusing on improving conversion rates and user experience.",
     },
@@ -31,6 +34,7 @@ export default function ProjectsPage() {
       title: "Analytics Platform",
       category: "Web App",
       tags: ["Web App", "Dashboard"],
+      Image:'/1.jpg',
       description:
         "A data analytics platform with complex data visualization tools made simple through thoughtful UX design.",
     },
@@ -39,6 +43,7 @@ export default function ProjectsPage() {
       title: "Health Tracking App",
       category: "Mobile App",
       tags: ["Mobile App", "Health"],
+      Image:'/1.jpg',
       description:
         "A health and fitness tracking application designed to motivate users and provide meaningful insights.",
     },
@@ -47,6 +52,7 @@ export default function ProjectsPage() {
       title: "Photography Portfolio",
       category: "Website",
       tags: ["Website", "Portfolio"],
+      Image:'/1.jpg',
       description: "A minimalist portfolio website for a professional photographer, focusing on visual storytelling.",
     },
     {
@@ -54,6 +60,7 @@ export default function ProjectsPage() {
       title: "Project Management Tool",
       category: "Web App",
       tags: ["Web App", "SaaS"],
+      Image:'/1.jpg',
       description:
         "A collaborative project management platform designed to streamline workflows and improve team productivity.",
     },
@@ -62,6 +69,7 @@ export default function ProjectsPage() {
       title: "Travel Booking App",
       category: "Mobile App",
       tags: ["Mobile App", "Travel"],
+      Image:'/1.jpg',
       description:
         "A travel booking application that simplifies the process of finding and booking flights, hotels, and experiences.",
     },
@@ -69,6 +77,7 @@ export default function ProjectsPage() {
       slug: "music-streaming-service",
       title: "Music Streaming Service",
       category: "Web App",
+      Image:'/1.jpg',
       tags: ["Web App", "Entertainment"],
       description: "A music streaming service with personalized recommendations and a seamless listening experience.",
     },
@@ -77,6 +86,7 @@ export default function ProjectsPage() {
       title: "Food Delivery Platform",
       category: "Mobile App",
       tags: ["Mobile App", "Food"],
+      Image:'/1.jpg',
       description:
         "A food delivery platform connecting users with local restaurants and providing real-time order tracking.",
     },
@@ -131,7 +141,7 @@ export default function ProjectsPage() {
               >
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/1.jpg"
                     alt={project.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"

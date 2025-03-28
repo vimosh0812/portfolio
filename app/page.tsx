@@ -8,51 +8,61 @@ import { useEffect } from "react"
 export default function Portfolio() {
   const projects = [
     {
-      slug: "finance-dashboard-app",
-      title: "Finance Dashboard App",
+      slug: "job-search-platform",
+      title: "Job Search Platform",
       category: "Mobile App",
       tags: ["Mobile App", "UI/UX"],
       description:
-        "A comprehensive finance management application with intuitive data visualization and user-friendly interface.",
+        "A seamless job search platform that connects job seekers with recruiters through a user-friendly and intuitive interface.",
+      image : '/cover11.png'
     },
     {
-      slug: "ecommerce-redesign",
-      title: "E-commerce Redesign",
+      slug: "hotel-booking-platform",
+      title: "Hotel Booking Platform",
+      category: "Website-Mobile App",
+      tags: ["Website", "Mobile App", "UI/UX"],
+      description:
+        "A seamless hotel booking platform that helps users find, compare, and book hotels effortlessly.",
+      image : 'hotel_cover1.png'
+
+    },
+    {
+      slug: "travel-booking-platform",
+      title: "Localize Sri Lanka",
       category: "Website",
-      tags: ["Website", "Responsive"],
+      tags: ["Website", "Travel"],
       description:
-        "A complete redesign of an e-commerce platform focusing on improving conversion rates and user experience.",
+        "A modern travel booking platform that simplifies searching, filtering, and booking travel packages.",
+      image : 'travel_cover.png'
+
     },
     {
-      slug: "analytics-platform",
-      title: "Analytics Platform",
-      category: "Web App",
-      tags: ["Web App", "Dashboard"],
-      description:
-        "A data analytics platform with complex data visualization tools made simple through thoughtful UX design.",
-    },
-    {
-      slug: "health-tracking-app",
-      title: "Health Tracking App",
-      category: "Mobile App",
-      tags: ["Mobile App", "Health"],
-      description:
-        "A health and fitness tracking application designed to motivate users and provide meaningful insights.",
-    },
-    {
-      slug: "photography-portfolio",
-      title: "Photography Portfolio",
+      slug: "car-selling-platform",
+      title: "Car Selling Platform",
       category: "Website",
-      tags: ["Website", "Portfolio"],
-      description: "A minimalist portfolio website for a professional photographer, focusing on visual storytelling.",
+      tags: ["Website", "Car"],
+      description:
+        "A modern car selling platform that allows users to browse, compare, and purchase vehicles with ease.",
+      image : 'car/car_cover.png'
+
     },
     {
-      slug: "project-management-tool",
-      title: "Project Management Tool",
-      category: "Web App",
-      tags: ["Web App", "SaaS"],
+      slug: "furniture-ecommerce-platform",
+      title: "Furniture E-Commerce Platform",
+      category: "Website",
+      tags: ["Website", "Furniture"],
+      description: "A seamless furniture shopping platform offering a personalized and interactive buying experience.",
+      image : 'furniture/furniture_cover.png'
+
+    },
+    {
+      slug: "recipe-app",
+      title: "Recipe App",
+      category: "Food & Cooking",
+      tags: ["Web App"],
       description:
-        "A collaborative project management platform designed to streamline workflows and improve team productivity.",
+        "A recipe app that helps users discover and cook delicious meals effortlessly.",
+      image : 'reciepes/recipe_cover5.png'
     },
   ]
 
@@ -88,7 +98,7 @@ export default function Portfolio() {
             className="animate-fade-in space-y-4 opacity-0"
             style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
           >
-            <h2 className="text-xl font-medium text-orange-500">Hello, I'm</h2>
+            <h2 className="text-xl font-medium text-orange-500">Hello, I'm Vimosh</h2>
             <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
               <span className="text-white">UI/UX</span>{" "}
               <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
@@ -149,7 +159,7 @@ export default function Portfolio() {
               <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">About Me</h2>
               <div className="space-y-4 text-gray-400">
                 <p>
-                  I'm a passionate UI/UX designer with over 5 years of experience creating user-centered digital
+                  I'm a passionate UI/UX designer with over 2 years of experience creating user-centered digital
                   experiences that are both beautiful and functional.
                 </p>
                 <p>
@@ -171,13 +181,12 @@ export default function Portfolio() {
             </div>
             <div className="relative h-[400px] w-full overflow-hidden rounded-xl md:w-1/2">
               <Image
-                src="/placeholder.svg?height=800&width=600"
-                alt="Designer portrait"
-                fill
-                className="object-cover"
-                priority
+              src="/about-f.png?height=800&width=600"
+              alt="Designer portrait"
+              fill
+              className="object-cover"
+              priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
             </div>
           </div>
 
@@ -229,12 +238,12 @@ export default function Portfolio() {
                 key={index}
                 className="group overflow-hidden rounded-xl bg-zinc-900 transition-all hover:bg-zinc-800"
               >
-                <div className="relative h-64 w-full overflow-hidden">
+                <div className="relative h-80 w-full overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
                 </div>
@@ -259,14 +268,14 @@ export default function Portfolio() {
             ))}
           </div>
 
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <Link
               href="/projects"
               className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-orange-500/20 bg-black/50 px-8 text-sm font-medium text-white backdrop-blur-sm transition-all hover:border-orange-500/50"
             >
               View All Projects
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
