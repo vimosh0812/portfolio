@@ -7,6 +7,165 @@ import { SetStateAction } from 'react'
 
 const projects = [
   {
+    "slug": "event-app",
+    "title": "Event Booking App",
+    "category": "Mobile App",
+    "tags": ["UI/UX", "Event Booking", "Web Design", "Mobile App"],
+    "description": "An event booking app designed specifically for elder people, featuring large fonts, simple navigation, for ease of use.",
+    "fullDescription": "This event booking app was specifically designed to cater to the needs of elderly users. It features large fonts for better readability, simple navigation to reduce cognitive load, and an intuitive interface that ensures ease of use. The app allows users to browse, book, and manage event tickets effortlessly, making it a valuable tool for staying socially active and engaged.",
+    "image": "/socialpass.png?height=400&width=600",
+    "gallery": [
+      "/social/10.png?height=600&width=800",
+      "/social/11.png?height=600&width=800",
+      "/social/12.png?height=600&width=800",
+      "/social/13.png?height=600&width=800",
+      "/social/14.png?height=600&width=800",
+    ],
+    "process": [
+      "User Research & Personas",
+      "Competitive Benchmarking",
+      "Information Architecture & Wireframing",
+      "Prototyping & Iteration",
+      "Visual Design & UI System",
+      "Usability Testing & Refinements"
+    ],
+    "outcomes": [
+      "User engagement increased by 70%",
+      "Booking process time reduced by 50%",
+      "User satisfaction rating improved from 3.5 to 4.8/5"
+    ],
+    "nextProject": "freelance-marketplace",
+    "projectDetails": {
+      "client": "Elderly Care Organization",
+      "duration": "4 weeks",
+      "role": "UI/UX Designer",
+      "team": "1 designer",
+      "tools": ["Figma", "Sketch", ],
+      "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
+    },
+    "challenges": [
+      "Creating an intuitive search and filtering system",
+      "Designing a smooth and fast booking process",
+      "Balancing user needs with accessibility requirements",
+      "Optimizing UI for both web and mobile experiences"
+
+    ],
+    "testimonial": {
+      "quote": "The new design has significantly improved user engagement, making job searching effortless and enjoyable.",
+      "author": "Emily Carter",
+      "position": "CEO, Recruitment Tech Startup"
+    },
+    caseStudy: ''
+  },
+  {
+    "slug": "electrical-ecommerce",
+    "title": "Electrical E-Commerce Platform",
+    "category": "Mobile & Web App",
+    "tags": ["UI/UX", "E-commerce","Mobile App"],
+    "description": "",
+    "fullDescription": "This e-commerce platform was designed to provide users with a seamless online shopping experience. The challenge was to create an engaging and accessible interface that allows users to browse, compare, and purchase groceries efficiently while ensuring a smooth checkout process.",
+    "image": "/electrical.png?height=400&width=600",
+    "gallery": [
+      "/electrical/20.png?height=600&width=800",
+      "/electrical/21.png?height=600&width=800",
+      "/electrical/22.png?height=600&width=800",
+      "/electrical/23.png?height=600&width=800",
+      "/electrical/24.png?height=600&width=800",
+      "/electrical/25.png?height=600&width=800",
+      "/electrical/26.png?height=600&width=800",
+
+
+
+
+
+    ],
+    "process": [
+      "User Research & Personas",
+      "Competitive Benchmarking",
+      "Information Architecture & Wireframing",
+      "Prototyping & Iteration",
+      "Visual Design & UI System",
+      "Usability Testing & Refinements"
+    ],
+    "outcomes": [
+      "Increased average order value by 25%",
+      "Reduced checkout time by 40%",
+      "Customer satisfaction rating improved from 4.0 to 4.8/5"
+    ],
+    "nextProject": "freelance-marketplace",
+    "projectDetails": {
+      "client": "Electic Shop Owner",
+      "duration": "4 weeks",
+      "role": "UI/UX Designer",
+      "team": "1 designer",
+      "tools": ["Figma", "Sketch", ],
+      "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
+    },
+    "challenges": [
+      "Creating an intuitive search and filtering system",
+      "Designing a smooth and fast checkout process",
+      "Balancing user needs with accessibility requirements",
+      "Optimizing UI for both web and mobile experiences"
+    ],
+    "testimonial": {
+      "quote": "The new design has significantly improved user engagement, making job searching effortless and enjoyable.",
+      "author": "Emily Carter",
+      "position": "CEO, Recruitment Tech Startup"
+    },
+    caseStudy: ''
+  },
+
+  {
+    "slug": "grocery-ecommerce-platform",
+    "title": "Grocery E-Commerce Platform",
+    "category": "Mobile App",
+    "tags": ["UI/UX", "E-commerce","Mobile App"],
+    "description": "A grocery e-commerce platform that simplifies online shopping with a user-friendly interface and personalized recommendations.",
+    "fullDescription": "This grocery e-commerce platform was designed to provide users with a seamless online shopping experience. The challenge was to create an engaging and accessible interface that allows users to browse, compare, and purchase groceries efficiently while ensuring a smooth checkout process.",
+    "image": "/grossoo.png?height=400&width=600",
+    "gallery": [
+      "/grosso/5.png?height=600&width=800",
+      "/grosso/6.png?height=600&width=800",
+      "/grosso/7.png?height=600&width=800",
+      "/grosso/8.png?height=600&width=800",
+      "/grosso/9.png?height=600&width=800",
+    ],
+    "process": [
+      "User Research & Personas",
+      "Competitive Benchmarking",
+      "Information Architecture & Wireframing",
+      "Prototyping & Iteration",
+      "Visual Design & UI System",
+      "Usability Testing & Refinements"
+    ],
+    "outcomes": [
+      "Increased average order value by 25%",
+      "Reduced checkout time by 40%",
+      "Customer satisfaction rating improved from 4.0 to 4.8/5"
+    ],
+    "nextProject": "freelance-marketplace",
+    "projectDetails": {
+      "client": "Grocery Shop Owner",
+      "duration": "4 weeks",
+      "role": "UI/UX Designer",
+      "team": "1 designer",
+      "tools": ["Figma", "Sketch", ],
+      "deliverables": ["Wireframes", "Prototypes", "User Research Report", "UI Kit", "Design System"]
+    },
+    "challenges": [
+      "Creating an intuitive search and filtering system",
+      "Designing a smooth and fast checkout process",
+      "Balancing user needs with accessibility requirements",
+      "Optimizing UI for both web and mobile experiences"
+    ],
+    "testimonial": {
+      "quote": "The new design has significantly improved user engagement, making job searching effortless and enjoyable.",
+      "author": "Emily Carter",
+      "position": "CEO, Recruitment Tech Startup"
+    },
+    caseStudy: ''
+  },
+  {
     "slug": "job-search-platform",
     "title": "Job Search Platform",
     "category": "Web & Mobile App",

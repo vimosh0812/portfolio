@@ -8,13 +8,40 @@ import { useEffect } from "react"
 export default function Portfolio() {
   const projects = [
     {
+      slug: "event-app",
+      title: "Event Booking Platform",
+      category: "Events",
+      tags: ["Mobile App"],
+      description:
+        "An event booking app designed specifically for elder people, featuring large fonts, simple navigation, for ease of use.",
+      image: '/socialpass.png'
+    },
+    {
+      slug: "grocery-ecommerce-platform",
+      title: "Grocery E-Commerce Platform",
+      category: "E-Commerce",
+      tags: ["Grocery"],
+      description:
+        "A modern grocery e-commerce platform that provides a seamless shopping experience for fresh produce and daily essentials.",
+      image: '/grossoo.png'
+    },
+    {
+      slug: "electrical-ecommerce",
+      title: "Electrical E-Commerce Platform",
+      category: "E-Commerce",
+      tags: ["Electrical "],
+      description:
+        "A modern electrical e-commerce platform that provides a seamless shopping experience for electrical products.",
+      image: '/electrical.png'
+    },
+    {
       slug: "job-search-platform",
       title: "Job Search Platform",
       category: "Mobile App",
       tags: ["Mobile App", "UI/UX"],
       description:
         "A seamless job search platform that connects job seekers with recruiters through a user-friendly and intuitive interface.",
-      image : '/cover11.png'
+      image: '/cover11.png'
     },
     {
       slug: "hotel-booking-platform",
@@ -23,8 +50,7 @@ export default function Portfolio() {
       tags: ["Website", "Mobile App", "UI/UX"],
       description:
         "A seamless hotel booking platform that helps users find, compare, and book hotels effortlessly.",
-      image : 'hotel_cover1.png'
-
+      image: '/hotel_cover1.png'
     },
     {
       slug: "travel-booking-platform",
@@ -33,8 +59,7 @@ export default function Portfolio() {
       tags: ["Website", "Travel"],
       description:
         "A modern travel booking platform that simplifies searching, filtering, and booking travel packages.",
-      image : 'travel_cover.png'
-
+      image: '/travel_cover.png'
     },
     {
       slug: "car-selling-platform",
@@ -43,8 +68,7 @@ export default function Portfolio() {
       tags: ["Website", "Car"],
       description:
         "A modern car selling platform that allows users to browse, compare, and purchase vehicles with ease.",
-      image : 'car/car_cover.png'
-
+      image: '/car/car_cover.png'
     },
     {
       slug: "furniture-ecommerce-platform",
@@ -52,8 +76,7 @@ export default function Portfolio() {
       category: "Website",
       tags: ["Website", "Furniture"],
       description: "A seamless furniture shopping platform offering a personalized and interactive buying experience.",
-      image : 'furniture/furniture_cover.png'
-
+      image: '/furniture/furniture_cover.png'
     },
     {
       slug: "recipe-app",
@@ -62,7 +85,7 @@ export default function Portfolio() {
       tags: ["Web App"],
       description:
         "A recipe app that helps users discover and cook delicious meals effortlessly.",
-      image : 'reciepes/recipe_cover5.png'
+      image: '/reciepes/recipe_cover5.png'
     },
   ]
 
