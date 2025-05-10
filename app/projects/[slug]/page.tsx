@@ -72,12 +72,7 @@ const projects = [
       "/electrical/23.png?height=600&width=800",
       "/electrical/24.png?height=600&width=800",
       "/electrical/25.png?height=600&width=800",
-      "/electrical/26.png?height=600&width=800",
-
-
-
-
-
+      "/electrical/26.png?height=600&width=800"
     ],
     "process": [
       "User Research & Personas",
