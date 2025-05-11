@@ -7,6 +7,105 @@ import { SetStateAction } from 'react'
 
 const projects = [
   {
+    "slug": "digital-agency-template",
+    "title": "Digital Marketing Agency Website Template",
+    "category": "Web App - UI Kit",
+    "tags": ["UI Kit", "Responsive Design", "Digital Marketing", "Web Design", "Template"],
+    "description": "A sleek, conversion-focused website UI kit designed for digital marketing agencies with a modern, responsive layout and clean black-and-white theme.",
+    "fullDescription": "This website UI kit is tailored for digital marketing agencies, offering an elegant and strategic design optimized for user engagement and lead generation. It includes reusable components, responsive layouts, and sections suited for showcasing services, case studies, and client testimonials.",
+    "image": "/digital-agency/21.png?height=400&width=600",
+    "gallery": [
+      "/digital-agency/22.png?height=600&width=800",
+      "/digital-agency/23.png?height=600&width=800",
+      "/digital-agency/24.png?height=600&width=800",
+    ],
+    "process": [
+      "Analyzing digital agency market and needs",
+      "Crafting a strategic content structure",
+      "Designing responsive and modular components",
+      "Building SEO-friendly page templates",
+      "User testing and iterative design improvements"
+    ],
+    "outcomes": [
+      "Lead conversion rate improved by 65%",
+      "Reduced development time for client sites",
+      "Enhanced mobile and desktop usability"
+    ],
+    "nextProject": "branding-agency-website",
+    "projectDetails": {
+      "client": "Internal Design Project",
+      "duration": "3 weeks",
+      "role": "UI Designer",
+      "team": "1 designer, 1 front-end developer",
+      "tools": ["Figma", "Adobe XD"],
+      "deliverables": ["UI Kit", "Landing Page Templates", "Reusable Components", "Style Guide"]
+    },
+    "challenges": [
+      "Designing a layout that balances creativity and clarity",
+      "Ensuring quick readability and strong calls-to-action",
+      "Supporting case studies and testimonials in an engaging format",
+      "Optimizing performance without compromising design quality"
+    ],
+    "testimonial": {
+      "quote": "This template made it effortless to launch a professional online presence for our agency. It's modern, responsive, and incredibly easy to adapt.",
+      "author": "Ava Morgan",
+      "position": "Co-founder, BrightMark Digital"
+    },
+    "caseStudy": "The Digital Marketing Agency Template was created to help agencies establish a powerful web presence with ease. With a clean and modern aesthetic, responsive structure, and reusable components, it allows agencies to effectively communicate their value proposition and convert more leads. The kit features landing pages, services sections, portfolios, and testimonials, all built for flexibility and fast deployment."
+  },
+  {
+    "slug": "cloudhub-saas-template",
+    "title": "SAAS Website",
+    "category": "Web App - UI Kit",
+    "tags": ["UI Kit", "Responsive Design", "SAAS", "Web Design", "Template"],
+    "description": "Cloudhub is a sleek and professional SAAS website UI kit with a modern black and white theme, designed for responsive performance and user-focused experience.",
+    "fullDescription": "Cloudhub is a meticulously crafted UI kit designed specifically for SAAS websites. This comprehensive template offers a harmonious blend of modern design and functionality, ensuring a seamless user experience across all devices.",
+    "image": "/saas.png?height=400&width=600",
+    "gallery": [
+      "/saas/24.png?height=600&width=800",
+      "/saas/25.png?height=600&width=800",
+      "/saas/26.png?height=600&width=800",
+      "/saas/27.png?height=600&width=800",
+      "/saas/28.png?height=600&width=800",
+      "/saas/29.png?height=600&width=800",
+      "/saas/30.png?height=600&width=800",
+    ],
+    "process": [
+      "Researching modern SAAS trends",
+      "Defining a flexible design system",
+      "Developing responsive components",
+      "Creating pre-built page layouts",
+      "Testing across devices and browsers",
+      "Iterative refinements and updates"
+    ],
+    "outcomes": [
+      "Reduced development time by 60%",
+      "Increased user engagement with responsive UI",
+      "Enhanced branding with clean and modern visuals"
+    ],
+    "nextProject": "dashboard-design-kit",
+    "projectDetails": {
+      "client": "Internal Template Project",
+      "duration": "3 weeks",
+      "role": "UI Designer",
+      "team": "1 designer, 1 front-end developer",
+      "tools": ["Figma", "Adobe XD"],
+      "deliverables": ["UI Kit", "Responsive Layouts", "Component Library", "Design Documentation"]
+    },
+    "challenges": [
+      "Maintaining design consistency across components",
+      "Ensuring full responsiveness on all screen sizes",
+      "Balancing minimalism with functionality",
+      "Creating a theme that appeals to diverse SAAS audiences"
+    ],
+    "testimonial": {
+      "quote": "Cloudhub has saved us weeks of design time and delivered a highly professional look. Our developers love working with its clean structure.",
+      "author": "Jordan Miles",
+      "position": "Lead Developer, SAAS Startup"
+    },
+    "caseStudy": ""
+  },  
+  {
     "slug": "event-app",
     "title": "Event Booking App",
     "category": "Mobile App",

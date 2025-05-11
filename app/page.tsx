@@ -35,6 +35,24 @@ export default function Portfolio() {
       image: '/electrical.png'
     },
     {
+      slug: "cloudhub-saas-template",
+      title: "SAAS Website",
+      category: "SaaS",
+      tags: ["Saas", "Website", "Mobile App"],
+      description:
+        "It is a sleek and professional SAAS website UI kit with a modern black and white theme, designed for responsive performance and user-focused experience.",
+      image: '/saas.png'
+    },
+    {
+      slug: "digital-agency-template",
+      title: "Digital Marketing Agency Website Template",
+      category: "Website",
+      tags: ["Agency", "Website", "Digital"],
+      description:
+        "A sleek, conversion-focused website UI kit designed for digital marketing agencies with a modern, responsive layout and clean black-and-white theme.",
+      image: '/digital-agency/21.png?width=600&height=800'
+    },
+    {
       slug: "job-search-platform",
       title: "Job Search Platform",
       category: "Mobile App",
