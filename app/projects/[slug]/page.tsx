@@ -7,6 +7,56 @@ import { SetStateAction } from 'react'
 
 const projects = [
   {
+    "slug": "advanced-quiz-app",
+    "title": "Quiz App for A/L Students",
+    "category": "Education - Mobile App",
+    "tags": ["Education", "Quiz App", "Advanced Learning", "Mobile App", "Sri Lanka"],
+    "description": "An advanced quiz app designed for students in Sri Lanka, offering challenging questions and interactive learning features.",
+    "fullDescription": "This advanced quiz app is tailored for students in Sri Lanka, providing a platform to test their knowledge across various subjects. It features a sleek design, interactive quizzes, and detailed performance analytics to help students improve their learning outcomes.",
+    "image": "/quiz-app/1.png?height=400&width=600",
+    "gallery": [
+      "/quiz-app/2.png?height=600&width=800",
+      "/quiz-app/3.png?height=600&width=800",
+      "/quiz-app/4.png?height=600&width=800",
+      "/quiz-app/5.png?height=600&width=800",
+      "/quiz-app/6.png?height=600&width=800",
+      "/quiz-app/7.png?height=600&width=800",
+    ],
+    "process": [
+      "Conducting user research with advanced-level students",
+      "Designing an intuitive and engaging interface",
+      "Developing a robust question bank with varying difficulty levels",
+      "Implementing real-time performance tracking and analytics",
+      "Testing and refining the app based on user feedback"
+    ],
+    "outcomes": [
+      "Improved student engagement by 75%",
+      "Enhanced learning outcomes with detailed analytics",
+      "Increased app retention rate by 60%"
+    ],
+    "nextProject": "student-progress-tracker",
+    "projectDetails": {
+      "client": "Educational Tech Startup",
+      "duration": "5 weeks",
+      "role": "UI/UX Designer",
+      "team": "1 designer, 2 developers",
+      "tools": ["Figma", "Adobe XD", "React Native"],
+      "deliverables": ["Wireframes", "Prototypes", "UI Kit", "Interactive Mockups"]
+    },
+    "challenges": [
+      "Creating a question bank that caters to diverse learning levels",
+      "Designing an engaging UI for both mobile and tablet users",
+      "Ensuring accessibility for students with limited resources",
+      "Incorporating real-time feedback and analytics"
+    ],
+    "testimonial": {
+      "quote": "This app has transformed the way students prepare for exams. The interactive quizzes and detailed analytics are game-changers.",
+      "author": "Dr. Nimal Perera",
+      "position": "Education Consultant, Sri Lanka"
+    },
+    "caseStudy": ""
+  },
+  {
     "slug": "digital-agency-template",
     "title": "Digital Marketing Agency Website Template",
     "category": "Web App - UI Kit",
@@ -928,40 +978,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
           </div>
         </div>
       </section>
-      {/* Next Project Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold">Next Project</h2>
-            <p className="text-gray-400">Check out another project from my portfolio</p>
-          </div>
 
-          <div className="mt-12">
-            <Link
-              href={`/projects/${project.nextProject}`}
-              className="group block relative h-[300px] rounded-xl overflow-hidden"
-            >
-              <Image
-                src="/placeholder.svg?height=600&width=1200"
-                alt="Next project"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end p-8">
-                <div className="text-center">
-                  <p className="text-gray-400 mb-2">Next Project</p>
-                  <h3 className="text-2xl font-bold mb-4">
-                    {projects.find((p) => p.slug === project.nextProject)?.title}
-                  </h3>
-                  <span className="inline-flex items-center gap-2 text-orange-500">
-                    View Project <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
   </main>
   )
 }

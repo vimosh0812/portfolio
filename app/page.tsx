@@ -26,6 +26,14 @@ export default function Portfolio() {
       image: '/grossoo.png'
     },
     {
+      slug: "advanced-quiz-app",
+      title: "Quiz App for A/L Students",
+      category: "Education - Mobile App",
+      tags: ["Mobile App"],
+      description:"A quiz app designed for students in Sri Lanka, offering challenging questions and interactive learning features.",
+      image: '/quiz-app/1.png?height=400&width=600'
+    },
+    {
       slug: "electrical-ecommerce",
       title: "Electrical E-Commerce Platform",
       category: "E-Commerce",
